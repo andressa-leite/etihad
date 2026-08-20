@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etihad Cabin Crew Interview Prep</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- TELA PRINCIPAL: LISTA DE PERGUNTAS -->
+  <main id="home-view" class="container">
+    <header>
+      <h1>Etihad Interview Prep</h1>
+      <p>Guia de preparação para o processo seletivo de Cabin Crew.</p>
+    </header>
+
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Digite uma palavra-chave (ex: stress, safety, teacher)...">
+    </div>
+
+    <ul id="questions-list" class="questions-list"></ul>
+  </main>
+
+  <!-- TELA DE DETALHES: RESPOSTA DA PERGUNTA -->
+  <main id="detail-view" class="container hidden">
+    <button id="back-btn" class="back-btn">&larr; Voltar para as perguntas</button>
+    <article class="card">
+      <h2 id="detail-title"></h2>
+      <div id="detail-answer" class="answer-content"></div>
+      <div class="follow-ups">
+        <h3>Possible Examiner Follow-ups</h3>
+        <ul id="detail-followups"></ul>
+      </div>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
